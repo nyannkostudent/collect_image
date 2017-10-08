@@ -1,2 +1,2 @@
 # Usage
-python collect.py <API-Key> <num-of-images> <query>
+python collect.py 'API-Key' 'num-of-images' 'query'
