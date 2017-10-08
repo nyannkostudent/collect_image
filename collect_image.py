@@ -75,7 +75,7 @@ def make_image_path(dirpath, url):
         encoded_url = url.encode('utf-8')
         hashed_url = str(hashlib.sha3_256(encoded_url).hexdigest())
         file_name = hashed_url.replace('\'', '')
-        full_path = os.path.join(dirpath, hashed_url + hashed_url)
+        full_path = os.path.join(dirpath, file_name + file_extension.lower())
 
         return full_path
 
@@ -139,7 +139,7 @@ def request_images_and_save(header, params):
             print("%s" % (err))
             continue
 
-        return
+    return
 
 
 # If this file is executed from commandline, below script will execute.
